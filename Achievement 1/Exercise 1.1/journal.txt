@@ -1,0 +1,27 @@
+Exercise 1.1: Getting Started with Python 
+Learning Goals
+
+
+⦁ Summarize the uses and benefits of Python for web development.
+
+	- Python code can be so simple to digest, it was designed with readability in mind. It uses dynamic typing that allows variables to assume any kind of value. Python's frameworks and libraries help ease common tasks which frees up developers time and attention.
+
+⦁ Prepare your developer environment for programming with Python.
+
+
+
+Reflection Questions
+
+1. In your own words, what is the difference between frontend and backend web development? If you were hired to work on backend programming for a web application, what kinds of operations would you be working on?
+
+	- Frontend development focuses more on user interaction and providing a welcoming experience to users' requests for information. The backend involves more user data, storing information in a database, receiving requests, and sending responses.  Working for a backend position, I would be involved with handling and using databases and APIs and setting up security authentication.
+
+2. Imagine you’re working as a full-stack developer in the near future. Your team is asking for your advice on whether to use JavaScript or Python for a project, and you think Python would be the better choice. How would you explain the similarities and differences between the two languages to your team? Drawing from what you learned in this Exercise, what reasons would you give to convince your team that Python is the better option? 
+
+	- Javascript and Python have many similarities. Both use dynamic typing and are executed line by line via standardized syntax. Each is a high-level scripting language. Python would be great for this project because it is easy to learn and understand, allowing new hires and employees to grasp the language quickly. Second, Python has many open-source and proprietary packages that simplify and automate everyday tasks, helping free up developers' time and attention. Third, since its readability is excellent, this helps keep your code error-resistant. Debugging is more straightforward, and having dynamic typing reduces the error count. An extra reason is that it has a big community, which is constantly getting updated and has lots of documentation.
+
+3. Now that you’ve had an introduction to Python, write down 3 goals you have for yourself and your learning during this Achievement. You can reflect on the following questions if it helps you. What do you want to learn about Python? What do you want to get out of this Achievement? Where or what do you see yourself working on after you complete this Achievement?
+
+- Learning to use Python to its advantage, optimizing a web application.
+- Next goal is to Master the basics of Python, having another language under my arsenal of skills.
+- I would like to work on web applications that pull from databases to display detailed information about songs, games, and sports and make them into a one-stop app (everything app).

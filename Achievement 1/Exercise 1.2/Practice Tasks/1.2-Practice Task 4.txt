@@ -1,0 +1,18 @@
+str1 = 'hello, '
+str2 = 'how are you?'
+str3 = str1 + str2
+
+str3[3:] It would start from index 3 and print all after.
+lo, how are you?
+
+str3[-3:] It would start from the end and - 3 on index, this means start from 16 and print all after.
+ou?
+
+str3[2:9:3] It would start from index 2 and end at index 9, while printing every 3rd letter.
+l,o
+
+str3[::-2] It would start from index 0 and end at the last letter, while printing every 2nd letter but in reverse
+?o r o olh
+
+str3[2:8] It would start from index 2 and end at index 8.
+llo, h

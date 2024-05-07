@@ -1,0 +1,46 @@
+Exercise 1.3: Functions and Other Operations in Python
+Learning Goals
+
+Implement conditional statements in Python to determine program flow
+Use loops to reduce time and effort in Python programming
+Write functions to organize Python code
+
+Reflection Questions
+
+In this Exercise, you learned how to use if-elif-else statements to run different tasks based on conditions that you define. Now practice that skill by writing a script for a simple travel app using an if-elif-else statement for the following situation: 
+
+The script should ask the user where they want to travel. 
+The user’s input should be checked for 3 different travel destinations that you define. 
+If the user’s input is one of those 3 destinations, the following statement should be printed: “Enjoy your stay in ______!”
+If the user’s input is something other than the defined destinations, the following statement should be printed: “Oops, that destination is not currently available.”
+	
+Write your script here. (Hint: remember what you learned about indents!)
+_______________________________________________________________________________________________________________
+travel = input("Where do you want to travel?: ")
+locations = ["Spain", "England", "Canada"]
+if travel == "Spain":
+	print("Enjoy your stay in Spain!")
+elif travel == "England":
+	print("Enjoy your stay in England!")
+elif travel == "Canada":
+	print("Enjoy your stay in Canada!")
+else:
+	print("Oops, that destination is not currently available. Try these other 3 destinations!")
+	print(locations)
+_______________________________________________________________________________________________________________
+
+	
+
+1. Imagine you’re at a job interview for a Python developer role. The interviewer says “Explain logical operators in Python”. Draft how you would respond.
+
+	Logical operations tell you whether a condition is true or false. There are three logic operations. The And Operator outputs true when one or two statements are true. The Or Operator outputs True if both statements are true. The Not Operator outputs a true if both statements are false, it is essentially inverted.
+
+2. What are functions in Python? When and why are they useful?
+
+	Functions are a set of instructions that process or manipulate your code. You can create your functions too. They are useful for defining set instructions to use on code and can be used on multiple areas within your code.
+
+3. In the section for Exercise 1 in this Learning Journal, you were asked in question 3 to set some goals for yourself while you complete this course.  In preparation for your next mentor call, make some notes on how you’ve progressed toward your goals so far.
+
+	For the first goal, I am learning Python and its advantages, I have learned ways to write multi-lined code in one line, which helps optimization.
+My second goal is to master Python, this will come with time but I have improved my knowledge of Python.
+The last goal is my end goal, being able to create a web application that pulls information from multiple databases.

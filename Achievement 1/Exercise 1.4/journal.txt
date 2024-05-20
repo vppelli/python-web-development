@@ -1,0 +1,21 @@
+Exercise 1.4 File Handling in Python
+Learning Goals
+
+Use files to store and retrieve data in Python
+
+Reflection Questions
+
+    1. Why is file storage important when you’re using Python? What would happen if you didn’t store local files?
+	File storage is important when using Python. It is where all your information/data is stored. Allowing you to load up data inputted or from another user. If you did not have file storage, you would lose any data written during run time.
+
+    2. In this Exercise you learned about the pickling process with the pickle.dump() method. What are pickles? In which situations would you choose to use pickles and why?
+	Pickles is a way to store more complex data structures as dictionaries. Storing data would be saved as a text file, but when using complex data, it becomes difficult to structure. For my recipe app, I would use Pickles due to the reason of the lists of recipes in my dictionaries.
+
+    3. In Python, what function do you use to find out which directory you’re currently in? What if you wanted to change your current working directory?
+	You would import the OS module that hosts the feature to manage files. The function would then be os.getcwd(), returning a response to the current directory. To change the current directory, you would type os.chdir("<path you want>").
+
+    4. Imagine you’re working on a Python script and are worried there may be an error in a block of code. How would you approach the situation to prevent the entire script from terminating due to an error?
+	I would set up a try-except block, this allows me to set up a "safe area". I would input the code I want to test inside the try block, then add the error message inside the except block that notifies the user. Allowing the code to then continue with the script.
+
+    5. You’re now more than halfway through Achievement 1! Take a moment to reflect on your learning in the course so far. How is it going? What’s something you’re proud of so far? Is there something you’re struggling with? What do you need more practice with? Feel free to use these notes to guide your next mentor call.
+	I learned a lot about saving data in a file, where I can load up information and use it on other scripts. I am happy with the ability to understand all sections of my code while being neatly organized. One thing that I would like to improve on is condensing my code from multiline to a single line of code.

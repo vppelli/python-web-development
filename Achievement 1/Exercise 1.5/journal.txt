@@ -1,0 +1,19 @@
+Exercise 1.5 Object-Oriented Programming in Python
+Learning Goals
+
+Apply object-oriented programming concepts to your Recipe app
+
+Reflection Questions
+
+    1. In your own words, what is object-oriented programming? What are the benefits of OOP?
+	Object-oriented programming is a method that allows programmers to create a custom method. As in a central code that can have children that use its code for other features. Benefits of using OOP is that it reduces repeated code. Helping keep your code clean and efficient.
+	
+    2. What are objects and classes in Python? Come up with a real-world example to illustrate how objects and classes work.
+	Using a real world example Classes are like lined paper its pre setup like a template, and the Object is the same lined paper with its info filled out.
+
+    3. In your own words, write brief explanations of the following OOP concepts;
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- Inheritance          | A Class can have predefined code done, a subclass of that Class can then use the same code with out defining it since its already passed down to it.                |
+- Polymorphism         | Lets say the attribute or method has the same name across different classes. This is okay allowing it to perform different operation, based on where it was written.|
+- Operator Overloading | It is when you define your own method for operators like + or - . If you don't do this you will run in too TypeError due to not being supported.                    |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

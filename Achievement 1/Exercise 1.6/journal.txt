@@ -1,0 +1,25 @@
+Exercise 1.6 Connecting to Databases in Python
+Learning Goals
+
+Create a MySQL database for your Recipe app
+
+Reflection Questions
+
+    1. What are databases and what are the advantages of using them?
+    Databases are a collection of information, or data. Advantages are being able to refrence multiple columns of information from a table, you can have multiple tables in one database. Providing you a large and organized area that holds all information needed to be stored.
+	
+    2. List 3 data types that can be used in MySQL and describe them briefly:
+----------------------------------------------------------------------------------------------------------
+- VARCHAR(n)     | This is a String datatype but you can set a maximum number of characters at (n)       |
+- INT            | This is the standard integer a datatype that holds a number value                     |
+- DATETIME       | This is a datatype that holds datetime values                                         |
+----------------------------------------------------------------------------------------------------------
+
+    3. In what situations would SQLite be a better choice than MySQL?
+    SQLite would be used more for small applications that dont need complex databases to expand and scale. With MySQL you would use this for larger and more complex application. Where high amounts of data is required and being able to expand and scale.
+
+    4. Think back to what you learned in the Immersion course. What do you think about the differences between JavaScript and Python as programming languages?
+    JavaScript and Python have lots of similarities, but with Python I enjoyed it more than JavaScript. Simple to digest, it was designed with readability in mind. It uses dynamic typing that allows variables to assume any kind of value.
+
+    5. Now that you’re nearly at the end of Achievement 1, consider what you know about Python so far. What would you say are the limitations of Python as a programming language?
+    I haven't used Python for a long time, I dont have much to say on the limitations of Python, If I do come across them Ill make sure to update my journal.

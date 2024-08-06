@@ -2,7 +2,7 @@
 - Create a MySQL database for your Recipe app
 
 
-## Included in Exercise 1.5: 
+## Included in Exercise 1.6: 
 - Practice Folder ( includes screenshots of practice tasks)
 - journal.txt
 - 1.6 task

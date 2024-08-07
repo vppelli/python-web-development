@@ -75,7 +75,7 @@ def amount_of_ingredients_valid():
 def create_recipe():
     # Called from for loop to input recipe information
     def new_recipe():
-        ingredient_list = set()
+        ingredient_list = []
         # Uses Validation loop setup above.
         name = name_valid()
         cooking_time = cooking_time_valid()
@@ -84,7 +84,8 @@ def create_recipe():
         
         for amount in range(ia):
             ingredient = input("Ingredient: ")
-            ingredient_list.update(ingredient)
+            if ingredient not in ingredient_list:
+                ingredient_list.append(ingredient)
         print("\nAll ingredients added!")
         ingredients = ", ".join(ingredient_list)
 
@@ -179,7 +180,7 @@ def edit_recipe():
     edit_column = ""
     while True:
         # Uses Validation loop setup above.
-        ingredient_list = set()
+        ingredient_list = []
 
         edit_column = input("\nType a number: ")
         print("-----------------------------")
@@ -196,7 +197,8 @@ def edit_recipe():
             ia = amount_of_ingredients_valid()
             for amount in range(ia):
                 ingredient = input("Ingredient: ")
-                ingredient_list.update(ingredient)
+                if ingredient not in ingredient_list:
+                    ingredient_list.append(ingredient)
             print("\nAll ingredients added!")
             ingredients = ", ".join(ingredient_list)
             recipe_to_edit.ingredients = ingredients
@@ -225,14 +227,14 @@ def delete_recipe():
     while True:
             try:
                 recipe_to_delete = amount_of_ingredients_valid()
-                recipe = session.query(Recipe).filter(Recipe.id == (f"%{recipe_to_delete}%")).one()
+                recipe = session.query(Recipe).filter(Recipe.id == recipe_to_delete).one()
                 if not recipe:
                     print("That number is not listed!\nTry again.")
                 else:
                     break
             except ValueError:
                 print("Please input a valid number.")
-    print(f"Are you sure you want to delete {recipe.name}\1. Yes\2. No")
+    print(f"Are you sure you want to delete {recipe.name}\n1. Yes\n2. No")
     
     # Uses Validation loop setup above.
     confimed_value = amount_of_ingredients_valid()

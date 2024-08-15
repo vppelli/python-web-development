@@ -1,0 +1,26 @@
+Exercise 2.1: Getting Started with Django 
+Learning Goals
+
+• Explain MVT architecture and compare it with MVC
+• Summarize Django’s benefits and drawbacks 
+• Install and get started with Django
+
+
+Reflection Questions
+
+1. Suppose you’re a web developer in a company and need to decide if you’ll use vanilla (plain) Python for a project, or a framework like Django instead. What are the advantages and drawbacks of each?
+	Using Django would bring many benifits like, Fast Developement, Fast processing, Content delivery networks, Scalibility, Security, and a great community of resources. Django also has negatives Like, Firm structure, Server intensive, and not great for simple projects that wont use any of the benfits listed before. With Python you have a bare bones application with no included features. This brings the benifit of being very customizable, Easy to learn, Simple built in package management, Out of box essentials, and strong community too. Overall conclution comes to how complicated your application is and what features will be used.
+
+2. In your own words, what is the most significant advantage of Model View Template (MVT) architecture over Model View Controller (MVC) architecture?
+	It helps handle application data, it can retreve, update, and delete records from the database. It can also view data from a model and render it to a template. Template then handles the user interface, in MTV the template handles the controller, but using the MTC you have to setup the controller code yourself.
+
+3. Now that you’ve had an introduction to the Django framework, write down three goals you have for yourself and your learning process during this Achievement. You can reflect on the following questions if it helps:
+    • What do you want to learn about Django?
+		Django has many benifits to applications that take full use of its benifits improving processing time and development time. Arriving with security and support for content delivery networks. It is also has a firm structure you must follow to use django.
+
+    • What do you want to get out of this Achievement?
+		I would like to understand Django structure more going forword. Lots of information i have read about Django is that it uses a firm structure. "the Django way".
+
+    • Where or what do you see yourself working on after you complete this Achievement
+		I still see my self taking on my all in one application from my first Journal entry. Django seems like it would be the best framwork to build it from.
+

@@ -1,0 +1,19 @@
+Exercise 2.2: Django Project Set Up
+Learning Goals
+
+• Describe the basic structure of a Django project 
+• Summarize the difference between projects and apps
+• Create a Django project and run it locally
+• Create a superuser for a Django web application
+
+
+Reflection Questions
+
+1. Suppose you’re in an interview. The interviewer gives you their company’s website as an example, asking you to convert the website and its different parts into Django terms. How would you proceed? For this question, you can think about your dream company and look at their website for reference. 
+	Using Youtube Music, The whole Youtube Music web app is a Project. These projects can hold multiple apps as Music player, Search and Filters. Apps can also be global like Account/profile, and login app that can be used between two projects example:"Youtube, Youtube TV, and Youtube music".
+
+2. In your own words, describe the steps you would take to deploy a basic Django application locally on your system. 
+	First I would create a new Virtual environment and activate the "V.E.", then install Python and Django. Create a Django Project with the django commands."django-admin.exe startproject <Name of project>" This will build the file structure you need to get started. Rename folder to scr that has both folder structure and manage.py files within it. Execute command "py manage.py migrate" to steup your database, after that is done run your server with "py manage.py runserver". All thats left is creating a superuser to log-in to your admin pannel. using "py manage.py createsuperuser" Setup your admin details and login to yur admin pannel using the provided url from server with the /admin at the end. 
+
+3. Do some research about the Django admin site and write down how you’d use it during your web application development.
+	The Admin site in Django allows you to control users rules. Operations Like Create Read Update, and Delete the CRUD operations. Really easy to navigate and interact with.

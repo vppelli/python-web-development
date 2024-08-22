@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="raw.githubusercontent.com/vppelli/python-web-development/main/Achievement%202/Exercise%202.5/A2_Recipe_App/src/recipes/templates/recipes/main.css">
+    <title>Recipe Home</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Welcome<br>{{name}}</h1>
+            <button>Logout</button>
+        </div>
+        <div>
+            <h2>Recently Added</h2>
+            
+        </div>
+        <div>
+            <h2>Recipe Tools</h2>
+            <button>Add</button>
+            <button>Update</button>
+            <button>Remove</button>
+            <button>Search ingredient</button>
+        </div>
+        <div>
+            <h2>All Available Recipes</h2>
+            <ul>
+                {% for recipe in recipes %}
+                <li>
+                    <a href ="{{recipe.get_absolute_url}}">
+                        {{recipe.name}}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div>
+            <textarea>Search</textarea>
+            <button>close</button>
+            <h2>Recipes Found</h2>
+        </div>
+    </div>
+
+</body>
+</html>

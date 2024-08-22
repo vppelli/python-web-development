@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Home</title>
+    <style>   
+        body {
+            background-color: #F2F2F7;
+            margin: 0px;
+            padding: 40px 20px 140px 20px;
+            /* height:  100vh; */
+        }
+        * {
+            box-sizing: border-box;
+        }
+        :is(h1, h2, h3, h4, h5, h6) {
+            margin: 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: auto;
+            gap: 20px;
+            justify-content: flex-start;
+        }
+
+        .container-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .alignleft {
+            justify-content: flex-start;
+            gap: 5px;
+        }
+
+        .fill {
+            display: flex;
+            justify-content: center;
+            color: #F2F2F7;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+        .showcase {
+            height: 350px;
+            max-width: 350px;
+        }
+
+        a {
+            display: flex;
+            background-color: #BE822C;
+            color: #F2F2F7;
+            border-radius: 25px;
+            border: none;
+            height: 72px;
+            width: 72px;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .hug {
+            height: fit-content;
+            width: fit-content;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #BE822C;
+            color: #F2F2F7;
+            border-radius: 25px;
+            border: none;
+            height: 80px;
+            width: 100%;
+            max-width: 350px;
+            padding: 0px;
+        }
+        button:hover {
+            background-color: #c17203;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .search-area {
+            position: fixed;
+            display: flex;
+            background-color: #BE822C;
+            border-radius: 25px 25px 0px 0px;
+            bottom: 0%;
+            left: 0%;
+            width: 100%;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-row">
+            <h1>Welcome <br>Michael</h1>
+            <a>Logout</a>
+        </div>
+        <h2>Recently Added</h2>
+        <div>
+        </div>
+        <h2>Recipe Tools</h2>
+        <div class="container-row alignleft">
+            <a class="hug">Add</a>
+            <a class="hug">Update</a>
+            <a class="hug">Remove</a>
+            <a class="hug">Search Ingredient</a>
+        </div>
+        <h2>All Available Recipes</h2>
+        {% for object in object_list %}
+        <a class="fill showcase" style="background-image: url('{{object.pic.url}}');" href ="{{object.get_absolute_url}}">
+            {{object.name}}
+        </a>
+        {% endfor %}
+        <div class="search-area">
+            <!-- <textarea>Search</textarea> -->
+            <button>close</button>
+            <h2>Recipes Found</h2>
+        </div>
+    </div>
+
+</body>
+</html>

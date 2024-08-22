@@ -1,0 +1,7 @@
+*__pycache__/
+
+# Text Backup files
+*.bak
+
+# Database
+*.sqlite3

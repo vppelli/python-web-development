@@ -15,11 +15,11 @@ class RecipeModuleTest(TestCase):
         self.assertEqual(field_label, 'name')
     
     def test_name_max_length(self):
-           # Get a recipe object to test
-           recipe = Recipe.objects.get(id=1)
+        # Get a recipe object to test
+        recipe = Recipe.objects.get(id=1)
 
-           # Get the metadata for the 'name' field and use it to query its max_length
-           max_length = recipe._meta.get_field('name').max_length
+        # Get the metadata for the 'name' field and use it to query its max_length
+        max_length = recipe._meta.get_field('name').max_length
 
-           # Compare the value to the expected result i.e. 120
-           self.assertEqual(max_length, 200)
+        # Compare the value to the expected result i.e. 120
+        self.assertEqual(max_length, 200)

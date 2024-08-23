@@ -1,23 +1,19 @@
-Exercise 2.4: Django Views and Templates
+Exercise 2.5: Django MVT Revisited
 Learning Goals
 
-• Summarize the process of creating views, templates, and URLs 
-• Explain how the “V” and “T” parts of MVT architecture work
-• Create a frontend page for your web application
+• Add images to the model and display them on the frontend of your application
+• Create complex views with access to the model
+• Display records with views and templates
 
 
 Reflection Questions
 
-1. Do some research on Django views. In your own words, use an example to explain how Django views work.
-	Views is the logic that runs when a user accesses a URL. It is what handles the requests and returns a response as in static information like HTML web page or JSON data. This is run through as a python function or a method of a pyton class.
+1. In your own words, explain Django static files and how Django handles them.
 
-2. Imagine you’re working on a Django web development project, and you anticipate that you’ll have to reuse lots of code in various parts of the project. In this scenario, will you use Django function-based views or class-based views, and why?
-	I would use class-based view over Django function based views. The reason class-based views would be best for this senerio is that it follows the DRY principle "dont repeat yourself". Class helps you deffine a structure that you can reuse for multiple parts in your project. 
+2. Look up the following two Django packages on Django’s official documentation and/or other trusted sources. Write a brief description of each.
+	ListView: List View refers to a view (logic) to display multiple instances of a table in the database. It streamlines the process by automatically handling the model, queryset, template, and context data. ListView simplifies the presentation of multiple database-backed lists in Django applications.
 
-3.  Read Django’s documentation on the Django template language and make some notes on its basics.
-	Django template language is designed to strike a balance between power and ease.
-	- A template is a text file. It can generate any text-based format HTML, XML, CSV.
-	- It uses Variables, they look like this {{ variables }}. When the template engine encounters a variable, it evaluates that variable and replaces it with the result.
-	- There are Filters too, Filters look like this: {{ name|lower }}. This displays the value of the {{ name }} variable after being filtered through the lower filter, which converts text to lowercase. Use a pipe (|) to apply a filter.
-	- Tags {% tag %} are more complex than variables: Some create text in the output, some control flow by performing loops or logic, and some load external information into the template to be used by later variables. Some tags require beginning and ending tags (i.e. {% tag %} ... tag contents ... {% endtag %}).
-	- To comment-out part of a line in a template, use the comment syntax: {# #}.
+	DetailView: Detail View refers to a view (logic) to display one instances of a table in the database. It simplifies the process by handling the model, queryset, template, and context data automatically. DetailView presentation of a single detailed database table list in Django applications.
+
+3. You’re now more than halfway through Achievement 2! Take a moment to reflect on your learning in the course so far. How is it going? What’s something you’re proud of so far? Is there something you’re struggling with? What do you need more practice with? You can use these notes to guide your next mentor call. 
+	From the start to currently I am proud to say I really enjoyed learing python and Django. There are deffently some parts I need to improve on, as understanding ListViews and Detailviews a bit more. The structure of Django is strict and im starting to see this more, but I am getting better with each Exercise.

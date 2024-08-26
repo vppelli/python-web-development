@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Recipe List</title>
+</head>
+<body style="background-image: none;">
+    <div class="container">
+        <div class="container-row">
+            <h1>Welcome <br>Michael</h1>
+            <a href="{%url 'logout' %}">Logout</a>
+        </div>
+        <h2>Recently Added</h2>
+        <h2>Recipe Tools</h2>
+        <div class="container-row alignleft">
+            <a class="hug">Add</a>
+            <a class="hug">Update</a>
+            <a class="hug">Remove</a>
+            <a class="hug">Search Ingredient</a>
+        </div>
+        <h2>All Available Recipes</h2>
+        <div class="container-row">
+            {% for object in object_list %}
+            <a class="fill showcase" style="background-image: url('{{object.pic.url}}'); background-position: center; background-size: cover;" href ="{{object.get_absolute_url}}">
+                {{object.name}}
+            </a>
+            {% endfor %}
+        </div>
+        <div class="search-area">
+            <input class="search-bar" type="text" id="search" name="search" placeholder="Search">
+            <div class="hidden">
+                <!-- <textarea>Search</textarea> -->
+                <button>close</button>
+                <h2>Recipes Found</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

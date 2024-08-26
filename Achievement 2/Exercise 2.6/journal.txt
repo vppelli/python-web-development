@@ -1,0 +1,38 @@
+Exercise 2.6: User Authentication in Django
+Learning Goals
+
+• Create authentication for your web application
+• Use GET and POST methods 
+• Password protect your web application’s views
+
+
+Reflection Questions
+
+1. In your own words, write down the importance of incorporating authentication into an application. You can take an example application to explain your answer. 
+	Authentication's is very important to have on an application. A great tool that helps you check / verify if a user is allowed on your application. Do they have full access or only read access? Example would be a online food store, users can sign up and input there payment info to purchase goods. But you dont want anyone with an account to be able to view there payment info. So you setup authication to confirm the person loging in, is the owner and not a stranger.
+
+2. In your own words, explain the steps you should take to create a login for your Django web application. 
+	Create Steps:
+	- Create the views.py in Django project app folder
+	- Create the templates folder in src folder
+	- Create the auth folder inside templetes folder
+	- Create Login.html and logout.hmtl with in the auth folder.
+	Setup Steps:
+	- Setup the needed imports in views.py ( render, redirect, authenticate, login, AuthenticationForm)
+	- Setup a function for login view to request from user input (username, password) then redirects you your desired page
+	- Setup logout view to redirect you to logout page
+	- Setup settings.py with 'DIRS': [BASE_DIR  / 'templates'], Within TEMPLATES = [...]
+	- Setup urls path for login and logout in urls.py, dont forget to import your .views for the login and logout functions
+	- Setup your login and logout .html to your syle and liking. To redirect to login page use <a> tag and link it using %url 'link' %. Example: <a href ="{%url 'login' %}">  Login  </a>
+	Save
+	Protecting Class based views:
+	- import LoginRequiredMixin from dejango auth and add the, to the Class you setup. Example: class RecipeListView(LoginRequiredMixin, ListView):
+	Protecting Function based views
+	- import login_required from django auth and add @login_required above the function you want to protect.
+	Save and runserver
+
+3. Look up the following three Django functions on Django’s official documentation and/or other trusted sources and write a brief description of each.
+
+	authenticate() - This is used to verify a set of credentials. Like username and password, then checks them against each authentication backend and returns a user object if the credentials are valid.
+	redirect() - This is used to redirect a user to a defined url/ location of the web application.
+	include() - This is used to include a template inside the current template. Useful for repative content that is the same for many pages.

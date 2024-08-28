@@ -1,0 +1,25 @@
+Exercise 2.7: Data Analysis and Visualization in Django
+Learning Goals
+
+• Work on elements of two-way communication like creating forms and buttons
+• Implement search and visualization (reports/charts) features
+• Use QuerySet API, DataFrames (with pandas), and plotting libraries (with matplotlib)
+
+
+Reflection Questions
+
+1. Consider your favorite website/application (you can also take CareerFoundry). Think about the various data that your favorite website/application collects. Write down how analyzing the collected data could help the website/application. 
+	Lets take Netflix as my example, The data Netflix collects would include: Movie, Show, Genre, Diector, Actors, Info fields, and User prefrence to name a few. Writing down and using this collected data helps them keep the application up to date on trends and prefrences. Having an easy way to locate certain information, improving user experience.
+
+2. Read the Django official documentation on QuerySet API. Note down the different ways in which you can evaluate a QuerySet.
+	You can evaluate querysets in the following:
+		Iteration: A QuerySet is iterable, and it executes its database query the first time you iterate over it.
+		Slicing: A QuerySet can be sliced, using Python’s array-slicing syntax. Slicing a QuerySet that has been evaluated also returns a list.
+		Pickling/Caching: The important thing for the purposes of this section is that the results are read from the database.
+		repr(): A QuerySet is evaluated when you call repr() on it. This is for convenience in the Python interactive interpreter, so you can immediately see your results when using the API interactively.
+		len(): A QuerySet is evaluated when you call len() on it. This, as you might expect, returns the length of the result list.
+		list(): Force evaluation of a QuerySet by calling list() on it.
+		bool(): Testing a QuerySet in a boolean context, such as using bool(), or, and or an if statement, will cause the query to be executed. If there is at least one result, the QuerySet is True, otherwise False.
+
+3. In the Exercise, you converted your QuerySet to DataFrame. Now do some research on the advantages and disadvantages of QuerySet and DataFrame, and explain the ways in which DataFrame is better for data processing.
+	The advantages of DataFrames are faster, easier to use, and more powerful than tables or spreadsheets. A disadvantage is the size limit for pandas DataFrames is 100 gigabytes (GB) of memory, instead of a set number of cells.

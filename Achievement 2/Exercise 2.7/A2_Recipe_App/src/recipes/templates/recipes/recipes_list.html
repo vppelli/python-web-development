@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Recipe List</title>
+</head>
+<body style="background-image: none;">
+    <div class="container">
+        <div class="container-row">
+            <h1>Welcome <br>Michael</h1>
+            <a href="{%url 'logout' %}">Logout</a>
+        </div>
+        <h2>Recently Added</h2>
+        <h2>Recipe Tools</h2>
+        <div class="container-row alignleft">
+            <a class="hug">Add</a>
+            <a class="hug">Update</a>
+            <a class="hug">Remove</a>
+            <a class="hug">Search Ingredient</a>
+        </div>
+        <h2>All Available Recipes</h2>
+        <div class="container-row spaceeven">
+            {% for object in recipes %}
+            <a class="fill showcase" style="background-image: url('{{object.pic.url}}'); background-position: center; background-size: cover;" href ="{{object.get_absolute_url}}">
+                {{object.name}}
+            </a>
+            {% endfor %}
+        </div>
+        <div id="search-area" class="search-area">
+            <div class="container-row search-fill no-wrap">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{form}}
+                    <button class="hug primary" type="submit" >search</button>
+                </form>
+                <a class="hug primary" href="/recipes">X</a>
+            </div>
+            {% if form.is_bound %}
+            <div>
+                {% if recipes_df %}
+                <div class="container-row overflow spaceeven">
+                    {{recipes_df|safe}}
+                    <img src="data:image/png;base64, {{chart|safe}}">
+                </div>
+                {% else %}
+                <h3> No data</h3>
+                {% endif %}
+            </div>
+            {% else  %}
+            <div class="container-row overflow spaceeven">
+                {% for recipe in recipes %}
+                <a class="showcase show-fill" style="background-image: url('{{recipe.pic.url}}'); background-position: center; background-size: cover;" href ="{{recipe.id}}">
+                    {{recipe.name}}
+                </a>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        <a class="search-area" href="#search-area">
+            <input class="search-bar" type="text" name="search" placeholder="Search">
+        </a>
+    </div>
+
+</body>
+</html>

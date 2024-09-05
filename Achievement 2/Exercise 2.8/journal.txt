@@ -1,0 +1,42 @@
+Exercise 2.8: Deploying a Django Project
+Learning Goals
+
+• Enhance user experience and look and feel of your web application using CSS and JS
+• Deploy your Django web application on a web server 
+• Curate project deliverables for your portfolio
+
+
+Reflection Questions
+
+1. Explain how you can use CSS and JavaScript in your Django web application.
+	CSS is great for styling your Django application, and using python to add interactive elements to your django application. Example: you can animate a sliding panel when a user clicks on a button, This would be done using both CSS and JavaScript.
+
+2. In your own words, explain the steps you’d need to take to deploy your Django web application. 
+	Create Steps:
+	- Create a account for any hosting service you like to use.
+	Setup Steps:
+	- Setup the settings.py file, hiding your security key and setting debug more to false. 
+	- Setup ypur `STATIC_URL, STATIC_ROOT, STATICFILES_DIRS`
+	- Setup and install whitenoise, this allows django applications to serve their own static files. Also update it in your MIDDLEWARE section under settings.py.
+	- Setup and print out your requirements.txt file using the `pip freeze > requirements.txt` command.
+	- Setup your Github repository to hold your Django project.
+	- Setup and install your hosting service client and push your github repo to their services.
+	Seting up database tables:
+	- run the migrate command. Example using "heroku": `heroku run python manage.py migrate`
+	- create your superuser Example using "heroku": `heroku run python manage.py createsuperuser`
+	- Update Allowed hosts and Security key from selected host.
+	- Commit to github and host.
+	Save and runserver
+
+3. (Optional) Connect with a few Django web developers through LinkedIn or any other network. Ask them for their tips on creating a portfolio to showcase Python programming and Django skills. Think about which tips could help you improve your portfolio.
+	Conected with 2 python veterans, they gave great feedback on how to improve and showcase my python and django work.
+
+4. You’ve now finished Achievement 2 and, with it, the whole course! Take a moment to reflect on your learning:
+    a. What went well during this Achievement? 
+		The pace of learning new python and django syntax was really fun to use. Really opened my mind and how I think, compared to other languages like JavaScript.
+    b. What’s something you’re proud of? 
+		I am really proud of my Recipe App and being able to achive a working application using django. 
+    c. What was the most challenging aspect of this Achievement? 
+		The most challenging aspect was figuring how to link pages to each other, since django syntax was hard to grasp at the start. It still gets me sometimes but I am reading more and more from the documentation.
+    d. Did this Achievement meet your expectations? Did it give you the confidence to start working with your new Django skills?
+		Yes! This course has helped me learn how to use python and Django. I feel confident in my skills to create new applications using Python and django.

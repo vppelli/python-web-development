@@ -1,3 +1,5 @@
+[<picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/vppelli/Vppelli/blob/main/img/PWJ.png"><source media="(prefers-color-scheme: light)" srcset="https://github.com/vppelli/Vppelli/blob/main/img/LPWJ.png"><img alt="Python Web Journey link" src="https://github.com/vppelli/Vppelli/blob/main/img/PWJAPP.png">
+</picture>](https://github.com/vppelli/python-web-development)
 # Python web development Learning Repo
 
 # Directions For Me
